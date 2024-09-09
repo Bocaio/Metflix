@@ -2,16 +2,46 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { ModalProvider } from '@saimin/react-modal-manager';
+// import StarRating from './Star';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <ModalProvider>
     <App />
+    </ModalProvider>
+    {/* // <StarRating></StarRating> */}
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import { ModalProvider, useModal } from '@saimin/react-modal-manager';
+
+// const MyApp = () => {
+//   const { open } = useModal();
+
+//   const showModal = () => {
+//     open('example-modal', {
+//       content: <div>Example Modal Content</div>,
+//       fullscreen: false,
+//       animationType: 'zoom',
+//       position: 'bottom-center',
+//       backdropOpacity: '0.9',
+//       hideOnClickBackDrop: true,
+//     });
+//   };
+
+//   return <button onClick={showModal}>Show Modal</button>;
+// };
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <ModalProvider>
+//     <MyApp />
+//   </ModalProvider>,
+//   document.getElementById('root')
+// );
+
+
