@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Metflix/static/css/main.d6fa3172.css",
+    "main.js": "/Metflix/static/js/main.6035bab7.js",
+    "index.html": "/Metflix/index.html",
+    "main.d6fa3172.css.map": "/Metflix/static/css/main.d6fa3172.css.map",
+    "main.6035bab7.js.map": "/Metflix/static/js/main.6035bab7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6fa3172.css",
+    "static/js/main.6035bab7.js"
+  ]
+}
